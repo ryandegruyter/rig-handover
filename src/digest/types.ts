@@ -23,8 +23,4 @@ export type NightDigest = {
   counts: StatusCounts;
 };
 
-export function readNight(runsDir: string, night: string): NightDigest {
-  void runsDir;
-  void night;
-  throw new Error('readNight is not implemented');
-}
+export { readNight } from './read.js';
